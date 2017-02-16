@@ -63,6 +63,7 @@
             - Farming resources to test out different character builds
             - No tools at the moment that helps them analyze the game
             - Unable to understand human gameplay behaviour and patterns.
+            - Existing tools: 
             
             Experience to be felt:
             - Control
@@ -89,17 +90,5 @@
     - Understand player behaviours better
 
 
-
-
-For the well-informed gamer who wants to dive deeper into the game and optimize their gameplay. They should be able to understand the nuances of the game.
-People who are interested in behaviour in games.
-
-How is your audience reading or encountering your project (media, UI, distribution channel, types of devices, spatial context)?
-Most likely desktop. Maybe mobile for people who want to do explore and experiment with skills while they are bored on the train home.
-Gaming sites, 
-
-What does your project ask of your audience to do (input, involvement, user experience)?  
-	- Discover the skills available. Pick the classes they wanna find out more about. Test and simulate?
-
-What does your audience learn and take away from their user experience?  
-	- 
+# Lastly, a video of me playing Aion in 2012 :)
+[Aion 3.0 / 3.1 Elyos Templar PvP – Asperius (Siel)](https://www.youtube.com/watch?v=8AkRxaQ6_ik)
