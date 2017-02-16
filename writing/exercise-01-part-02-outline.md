@@ -1,5 +1,7 @@
 # Audience Should Expect   
   an Exploratory Tool for User Behaviour and Game Stats
+  Users can upload their data.
+  
 
 
 ## Why Do This?
