@@ -1,4 +1,4 @@
-# Exercise 1 (Draft)
+# Exercise 1 Part 3
 
 #### 3. Give initial form to your concepts. This first prototype in a series of three iterations focuses on how your concept materializes.
 
