@@ -10,7 +10,7 @@
 - Jones, J. Robert, Osman Balci, and Anderson Norton. "A cloud software system for visualization of game-based learning data collected on mobile devices." 2015 Winter Simulation Conference (WSC) (2015): n. pag. Web.
 
 # Gamming Read List (Need to Cite Chicago Style) Note: Some not found on citationmachine and I can't cite the rest because the site ad blocked me. 
-- Analytics of Play: Using Information Visualization and Gameplay Practices for Visualizing Video Game Data (PIIM) – Need to create citation
+- Analytics of Play: Using Information Visualization and Gameplay Practices for Visualizing Video Game Data (PIIM)
 - Visualizing Competitive Behaviors in Multi-User Virtual Environments
 - PLATO: Understanding Gameplay Data Through Visualization
 - The Data Visualization­ification of Gaming
