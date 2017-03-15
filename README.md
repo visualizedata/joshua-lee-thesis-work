@@ -42,7 +42,7 @@ Human input.
 ### What are your primary data structures, how did you optimize, and does it sustain into the future?
 Time, player name, type of interaction.
 
-# Miscellaneous
+# Quick Links
 - [Reading List](/writing/readingList.md)
 - [Target Audience & User Persona](/writing/exercise-01-part-03-concepts.md)
 - [Most Important Reading](http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0033918&type=printable)
