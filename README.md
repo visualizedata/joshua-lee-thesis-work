@@ -42,8 +42,12 @@ Human input.
 ### What are your primary data structures, how did you optimize, and does it sustain into the future?
 Time, player name, type of interaction.
 
-## Hi-Fi Mockups
+# Miscellaneous
+[Reading List](/writing/readingList.md)
+[Target Audience & User Persona](/writing/exercise-01-part-03-concepts)
 
+
+# Hi-Fi Mockups
 ![](/writing/images/concepts-170314a-01.png)
 ![](/writing/images/concepts-170314a-02.png)
 ![](/writing/images/concepts-170314a-03.png)
