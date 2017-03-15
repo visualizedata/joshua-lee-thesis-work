@@ -1,4 +1,4 @@
-## Reading List
+# Reading List
 
 ### Gaming Reading List
 - [Wallner, G., and S. Kriglstein. "Visualization-based analysis of gameplay data – A review of literature." Entertainment Computing 4, no. 3 (2013): 143-55. doi:10.1016/j.entcom.2013.02.002.](http://ac.els-cdn.com/S1875952113000049/1-s2.0-S1875952113000049-main.pdf?_tid=711c70e6-097e-11e7-84c7-00000aacb35e&acdnat=1489582612_fdfc98f83e7f8574754d321907ed2e8c)

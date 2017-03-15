@@ -1,4 +1,4 @@
-## Thesis
+# Thesis
 
 ### What is the title of your project? 
 Visualizing Interactivity in Massive Multiplayer Online Role-Playing Games (MMORPG)
