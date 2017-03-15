@@ -43,8 +43,8 @@ Human input.
 Time, player name, type of interaction.
 
 # Miscellaneous
-[Reading List](/writing/readingList.md)
-[Target Audience & User Persona](/writing/exercise-01-part-03-concepts)
+- [Reading List](/writing/readingList.md)
+- [Target Audience & User Persona](/writing/exercise-01-part-03-concepts)
 
 
 # Hi-Fi Mockups
