@@ -23,8 +23,8 @@
 		]
 	},
 
-	"places": {
-
+	"places": 
+	{
 		"instances": 
 		[
 			["Smoldering Fire Temple", ["2017.02.24 14:54:24", "2017.02.24 14:54:43"]],
