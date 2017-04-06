@@ -14,6 +14,8 @@ Further, we identified possible directions for future research. Gameplay metrics
 
 Playing computer games has become a social experience. Hundreds of thousands of players interact in massively multiplayer online games (MMORPG), a recent and successful genre descending from the pioneering multi-user dungeons (MUDs). These new games are purposefully designed to encourage interactions among players, but little is known about the nature and structure of these interactions. In this paper, we analyze player-to-player interactions in two locations in the game Star Wars Galaxies. We outline different patterns of interactivity, and discuss how they are affected by the structure of the game. We conclude with a series of recommendations for the design and support of social activities within multiplayer games. (The social side of gaming: a study of interaction patterns in a massively multiplayer online game)
 
+#### Explain other genres out there other than MMOs
+
 
 #### Some visualization tools out there
 Several visualization tools (e.g., Data Cracker [9], Lithium [28], PlayerViz [1] or Playtracer [5]) have been developed in the last years with the goal to assist the analytical process. Such visualization tools range from simple representa- tions like bar charts of a single variable (e.g., level completion times) to complex systems that consider different visualization techniques (e.g., maps in combination with player path representation).
