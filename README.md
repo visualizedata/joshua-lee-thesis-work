@@ -49,5 +49,8 @@ Time, player name, type of interaction.
 
 
 # Hi-Fi Mockups
+Compact View
 ![](/writing/images/concepts-170409b-01.png)
+
+Expanded View
 ![](/writing/images/concepts-170409b-02.png)
