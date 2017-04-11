@@ -1,5 +1,169 @@
 # Visualization
 
+Sample Log Containing Key Events
+```
+var log = [
+    { raw: '2017.03.10 03:34:05 : You successfully enchanted Provenance Greatsword by +1.' },
+    { raw: '2017.03.10 03:34:44 : You successfully enchanted Provenance Greatsword by +2.' },
+    { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
+    { raw: '2017.03.13 00:37:17 : Blahblah has succeeded in enchanting Provenance Greatsword to level 15.' },
+    { raw: '2017.03.31 21:49:59 : You changed the connection status to Online.' },
+    { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
+    { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
+    { raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.' },
+    { raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o' },
+    { raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really' },
+    { raw: '2017.03.31 22:52:21 : The Hemorrhage Shot item has been sold by the broker.' },
+    { raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor' },
+    { raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss' },
+    { raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense' },    
+    { raw: '2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.' },
+    { raw: '2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.' },
+    { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.' },
+    { raw: "2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved." },
+    { raw: "2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary's Divine Breastplate." },
+    { raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;]. ' },
+    { raw: "2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker." },
+];
+```
+
+Ruleset
+```
+for (var i = 0; i < log.length; i++) {
+    
+    // create a timestamp rule
+    // use the mongodb time format. convert all timestamp strings to that format and then create a timestamp attribute
+    
+    // User Logged On
+    log[i].user_logged_on = log[i].raw.indexOf('You changed the connection status to Online') >= 0;
+    
+    // Enchantment Success
+    log[i].enchantment_success = log[i].raw.indexOf('You successfully enchanted') >= 0;
+    if (log[i].enchantment_success) log[i].enchantment_item = log[i].raw.split('enchanted ')[1].split(' by')[0];
+    if (log[i].enchantment_success) log[i].enchantment_increment = log[i].raw.split('+')[1].split('.')[0];
+
+    // Enchantment Failure
+    log[i].enchantment_failure = log[i].raw.indexOf('You have failed to enchant') >= 0;
+    if (log[i].enchantment_failure) log[i].enchantment_item = log[i].raw.split('enchant ')[1].split('.')[0];    
+    
+    // Tempering Success
+    log[i].tempering_success = log[i].raw.indexOf('You have successfully tempered') >= 0;
+    if (log[i].tempering_success) log[i].tempering_item = log[i].raw.split('tempered ')[1].split('.')[0];
+    if (log[i].tempering_success) log[i].tempering_increment = log[i].raw.split('+')[1].split(' temperance')[0];
+    
+    // Damage Inflicted
+    log[i].damage_inflicted = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0;
+    if (log[i].damage_inflicted) log[i].damage_amount = Number(log[i].raw.split('inflicted ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].damage_inflicted) log[i].damage_target = log[i].raw.split('on ')[1].split(' by')[0];
+    if (log[i].damage_inflicted) log[i].damage_skill = log[i].raw.split('using ')[1].split('.')[0];
+    
+    // Damage Received
+    log[i].damage_received = log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0;
+    if (log[i].damage_received) log[i].damage_amount = Number(log[i].raw.split('received ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].damage_received) log[i].damage_target = log[i].raw.split('from ')[1].split('.')[0];
+    
+    // Critical Hit
+    log[i].critical_hit = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0 || log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0;
+
+    // Outgoing Whisper
+    log[i].whisper_outgoing = log[i].raw.indexOf('You Whisper to') >= 0;
+    if (log[i].whisper_outgoing) log[i].whisper_outgoing_name = log[i].raw.split('charname:')[1].split(';')[0];
+    
+    // Incoming Whisper
+    log[i].whisper_incoming = log[i].raw.indexOf('] Whispers:') >= 0;
+    if (log[i].whisper_incoming) log[i].whisper_incoming_name = log[i].raw.split('charname:')[1].split(';')[0];    
+    
+    // Money Earned
+    log[i].money_earned = log[i].raw.indexOf('You have earned') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
+    if (log[i].money_earned) log[i].money_earned_amount = Number(log[i].raw.split('earned ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    
+    // Money Spent
+    log[i].money_spent = log[i].raw.indexOf('You spent') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
+    if (log[i].money_spent) log[i].money_spent_amount = Number(log[i].raw.split('spent ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+  
+    // Item Acquired
+    log[i].item_acquired = log[i].raw.indexOf('You have acquired') >= 0;
+    if (log[i].item_acquired) log[i].item_acquired_name = log[i].raw.split('acquired ')[1].split('.')[0];
+    
+    // Item Sold to NPC
+    log[i].item_sold_npc = log[i].raw.indexOf('You sold the item') >= 0;
+    
+    // Item Sold on Broker    
+    log[i].item_sold_broker = log[i].raw.indexOf('item has been sold by the broker') >= 0;
+    if (log[i].item_sold_broker) log[i].item_name = log[i].raw.split('The ')[1].split(' item')[0];
+        
+    // Quest Acquired
+    log[i].quest_acquired = log[i].raw.indexOf('Quest acquired') >= 0;
+    if (log[i].quest_acquired) log[i].quest_name = log[i].raw.split('acquired: ')[1];
+    
+    // Quest Updated
+    log[i].quest_updated = log[i].raw.indexOf('Quest updated') >= 0;
+    if (log[i].quest_updated) log[i].quest_name = log[i].raw.split('updated: ')[1];
+    
+    // Quest Complete
+    log[i].quest_completed = log[i].raw.indexOf('Quest complete') >= 0;
+    if (log[i].quest_completed) log[i].quest_name = log[i].raw.split('complete: ')[1];
+    
+    // Joined Group
+    log[i].joined_group = log[i].raw.indexOf('You have joined the group') >= 0;
+    
+    // Region Travel
+    log[i].region_change = log[i].raw.indexOf('You have joined the') >= 0 && log[i].raw.indexOf('region channel') >= 0;
+    if (log[i].region_change) log[i].region_entered = log[i].raw.split("You have joined the ")[1].split(' region channel')[0]
+
+    console.log(log[i]);
+    // instead of logging, append all the results to an array. (create an empty array at the top)
+    // then use the fs module and then write that array in to a text file.
+    // 
+}
+```
+Sample Output
+```
+{ raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.',
+  user_logged_on: false,
+  enchantment_success: false,
+  enchantment_failure: false,
+  tempering_success: false,
+  damage_inflicted: false,
+  damage_received: false,
+  critical_hit: false,
+  whisper_outgoing: false,
+  whisper_incoming: false,
+  money_earned: false,
+  money_spent: true,
+  money_spent_amount: 218850000,
+  item_acquired: false,
+  item_sold_npc: false,
+  item_sold_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  quest_completed: false,
+  joined_group: false,
+  region_change: false }
+{ raw: '2017.04.03 11:35:51 : You have successfully tempered Kaisinel\'s Bracelet. +1 temperance level achieved.',
+  user_logged_on: false,
+  enchantment_success: false,
+  enchantment_failure: false,
+  tempering_success: true,
+  tempering_item: 'Kaisinel\'s Bracelet',
+  tempering_increment: '1',
+  damage_inflicted: false,
+  damage_received: false,
+  critical_hit: false,
+  whisper_outgoing: false,
+  whisper_incoming: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_npc: false,
+  item_sold_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  quest_completed: false,
+  joined_group: false,
+  region_change: false }
+```
+
 ## Preliminary Data Structure
 ```
 {
