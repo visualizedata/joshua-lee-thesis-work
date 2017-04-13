@@ -1,12 +1,9 @@
 # Visualization
 
 Sample Log Containing Key Events
-```
+```js
 var log = [
-    { raw: '2017.03.10 03:34:05 : You successfully enchanted Provenance Greatsword by +1.' },
-    { raw: '2017.03.10 03:34:44 : You successfully enchanted Provenance Greatsword by +2.' },
     { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
-    { raw: '2017.03.13 00:37:17 : Blahblah has succeeded in enchanting Provenance Greatsword to level 15.' },
     { raw: '2017.03.31 21:49:59 : You changed the connection status to Online.' },
     { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
     { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
@@ -28,7 +25,7 @@ var log = [
 ```
 
 Ruleset
-```
+```js
 for (var i = 0; i < log.length; i++) {
     
     // create a timestamp rule
@@ -39,77 +36,97 @@ for (var i = 0; i < log.length; i++) {
     
     // Enchantment Success
     log[i].enchantment_success = log[i].raw.indexOf('You successfully enchanted') >= 0;
-    if (log[i].enchantment_success) log[i].enchantment_item = log[i].raw.split('enchanted ')[1].split(' by')[0];
-    if (log[i].enchantment_success) log[i].enchantment_increment = log[i].raw.split('+')[1].split('.')[0];
+    if (log[i].enchantment_success) 
+      log[i].enchantment_item = log[i].raw.split('enchanted ')[1].split(' by')[0];
+    if (log[i].enchantment_success) 
+      log[i].enchantment_increment = Number(log[i].raw.split('+')[1].split('.')[0]);
 
     // Enchantment Failure
     log[i].enchantment_failure = log[i].raw.indexOf('You have failed to enchant') >= 0;
-    if (log[i].enchantment_failure) log[i].enchantment_item = log[i].raw.split('enchant ')[1].split('.')[0];    
+    if (log[i].enchantment_failure) 
+      log[i].enchantment_item = log[i].raw.split('enchant ')[1].split('.')[0];    
     
     // Tempering Success
     log[i].tempering_success = log[i].raw.indexOf('You have successfully tempered') >= 0;
-    if (log[i].tempering_success) log[i].tempering_item = log[i].raw.split('tempered ')[1].split('.')[0];
-    if (log[i].tempering_success) log[i].tempering_increment = log[i].raw.split('+')[1].split(' temperance')[0];
+    if (log[i].tempering_success) 
+      log[i].tempering_item = log[i].raw.split('tempered ')[1].split('.')[0];
+    if (log[i].tempering_success) 
+      log[i].tempering_increment = log[i].raw.split('+')[1].split(' temperance')[0];
     
     // Damage Inflicted
     log[i].damage_inflicted = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0;
-    if (log[i].damage_inflicted) log[i].damage_amount = Number(log[i].raw.split('inflicted ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
-    if (log[i].damage_inflicted) log[i].damage_target = log[i].raw.split('on ')[1].split(' by')[0];
-    if (log[i].damage_inflicted) log[i].damage_skill = log[i].raw.split('using ')[1].split('.')[0];
+    if (log[i].damage_inflicted) 
+      log[i].damage_amount = Number(log[i].raw.split('inflicted ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].damage_inflicted) 
+      log[i].damage_target = log[i].raw.split('on ')[1].split(' by')[0];
+    if (log[i].damage_inflicted) 
+      log[i].damage_skill = log[i].raw.split('using ')[1].split('.')[0];
     
     // Damage Received
     log[i].damage_received = log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0;
-    if (log[i].damage_received) log[i].damage_amount = Number(log[i].raw.split('received ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
-    if (log[i].damage_received) log[i].damage_target = log[i].raw.split('from ')[1].split('.')[0];
+    if (log[i].damage_received) 
+      log[i].damage_amount = Number(log[i].raw.split('received ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].damage_received) 
+      log[i].damage_target = log[i].raw.split('from ')[1].split('.')[0];
     
     // Critical Hit
     log[i].critical_hit = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0 || log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0;
 
     // Outgoing Whisper
     log[i].whisper_outgoing = log[i].raw.indexOf('You Whisper to') >= 0;
-    if (log[i].whisper_outgoing) log[i].whisper_outgoing_name = log[i].raw.split('charname:')[1].split(';')[0];
+    if (log[i].whisper_outgoing) 
+      log[i].whisper_outgoing_name = log[i].raw.split('charname:')[1].split(';')[0];
     
     // Incoming Whisper
     log[i].whisper_incoming = log[i].raw.indexOf('] Whispers:') >= 0;
-    if (log[i].whisper_incoming) log[i].whisper_incoming_name = log[i].raw.split('charname:')[1].split(';')[0];    
+    if (log[i].whisper_incoming) 
+      log[i].whisper_incoming_name = log[i].raw.split('charname:')[1].split(';')[0];    
     
     // Money Earned
     log[i].money_earned = log[i].raw.indexOf('You have earned') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
-    if (log[i].money_earned) log[i].money_earned_amount = Number(log[i].raw.split('earned ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].money_earned) 
+      log[i].money_earned_amount = Number(log[i].raw.split('earned ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
     
     // Money Spent
     log[i].money_spent = log[i].raw.indexOf('You spent') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
-    if (log[i].money_spent) log[i].money_spent_amount = Number(log[i].raw.split('spent ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].money_spent) 
+      log[i].money_spent_amount = Number(log[i].raw.split('spent ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
   
     // Item Acquired
     log[i].item_acquired = log[i].raw.indexOf('You have acquired') >= 0;
-    if (log[i].item_acquired) log[i].item_acquired_name = log[i].raw.split('acquired ')[1].split('.')[0];
+    if (log[i].item_acquired) 
+      log[i].item_acquired_name = log[i].raw.split('acquired ')[1].split('.')[0];
     
     // Item Sold to NPC
     log[i].item_sold_npc = log[i].raw.indexOf('You sold the item') >= 0;
     
     // Item Sold on Broker    
     log[i].item_sold_broker = log[i].raw.indexOf('item has been sold by the broker') >= 0;
-    if (log[i].item_sold_broker) log[i].item_name = log[i].raw.split('The ')[1].split(' item')[0];
+    if (log[i].item_sold_broker) 
+      log[i].item_name = log[i].raw.split('The ')[1].split(' item')[0];
         
     // Quest Acquired
     log[i].quest_acquired = log[i].raw.indexOf('Quest acquired') >= 0;
-    if (log[i].quest_acquired) log[i].quest_name = log[i].raw.split('acquired: ')[1];
+    if (log[i].quest_acquired) 
+      log[i].quest_name = log[i].raw.split('acquired: ')[1];
     
     // Quest Updated
     log[i].quest_updated = log[i].raw.indexOf('Quest updated') >= 0;
-    if (log[i].quest_updated) log[i].quest_name = log[i].raw.split('updated: ')[1];
+    if (log[i].quest_updated) 
+      log[i].quest_name = log[i].raw.split('updated: ')[1];
     
     // Quest Complete
     log[i].quest_completed = log[i].raw.indexOf('Quest complete') >= 0;
-    if (log[i].quest_completed) log[i].quest_name = log[i].raw.split('complete: ')[1];
+    if (log[i].quest_completed) 
+      log[i].quest_name = log[i].raw.split('complete: ')[1];
     
     // Joined Group
     log[i].joined_group = log[i].raw.indexOf('You have joined the group') >= 0;
     
     // Region Travel
     log[i].region_change = log[i].raw.indexOf('You have joined the') >= 0 && log[i].raw.indexOf('region channel') >= 0;
-    if (log[i].region_change) log[i].region_entered = log[i].raw.split("You have joined the ")[1].split(' region channel')[0]
+    if (log[i].region_change) 
+      log[i].region_entered = log[i].raw.split("You have joined the ")[1].split(' region channel')[0]
 
     console.log(log[i]);
     // instead of logging, append all the results to an array. (create an empty array at the top)
@@ -118,7 +135,7 @@ for (var i = 0; i < log.length; i++) {
 }
 ```
 Sample Output
-```
+```json
 { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.',
   user_logged_on: false,
   enchantment_success: false,
@@ -146,7 +163,7 @@ Sample Output
   enchantment_failure: false,
   tempering_success: true,
   tempering_item: 'Kaisinel\'s Bracelet',
-  tempering_increment: '1',
+  tempering_increment: 1,
   damage_inflicted: false,
   damage_received: false,
   critical_hit: false,
@@ -165,7 +182,7 @@ Sample Output
 ```
 
 ## Preliminary Data Structure
-```
+```json
 {
 	"name":"Applied",
 	"class":"Templar",
@@ -251,7 +268,7 @@ Sample Output
 
 
 User Logged On
-```
+```raw
 2017.02.24 14:18:55 : You changed the connection status to Online.
 ```
 
@@ -548,6 +565,3 @@ Purchases
 ```
 2017.03.14 21:42:59 : You have purchased 20 [item:160001274;ver7;;;;]s. 
 ```
-
-
-{  }
