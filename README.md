@@ -6,6 +6,36 @@
 - [Target Audience & User Persona](/writing/exercise-01-part-03-concepts.md)
 - [Most Important Reading](http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0033918&type=printable)
 
+# Feature List
+- A platform for Aion players to review their gameplay activity in a visually more engaging way.
+- Grow as a player, improve your gameplay buy finding opportunities to optimize it!
+- Keep track and store your gameplay activity and compare it with other players. Exchange tips!
+
+
+Improve, Manage
+
+  Motivations:
+  - Desire to understand both the game and games better
+  - Want to grow in the game and grow fast and effectively
+  - Competitive, disciplined, goal-oriented
+  - Prioritizes effectiveness over efficiency
+  - Draw correlations between game and social data
+  - Spec their character the best way possible
+
+  Frustrations/Pain Points:
+  - Wasting time purchasing skills that are not effective
+  - Farming resources to test out different character builds
+  - No tools at the moment that helps them analyze the game
+  - Unable to understand human gameplay behaviour and patterns.
+  - Existing tools: 
+  
+  Experience to be felt:
+  - Control
+  - Enlightenment
+  - Light bulb moments
+  - Creativity
+
+
 
 # Hi-Fi Mockups
 Compact View
