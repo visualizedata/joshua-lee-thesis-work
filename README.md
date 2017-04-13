@@ -1,5 +1,22 @@
 # Thesis
 
+# Quick Links
+- [Thesis](/writing/thesis.md)
+- [Reading List](/writing/readingList.md)
+- [Target Audience & User Persona](/writing/exercise-01-part-03-concepts.md)
+- [Most Important Reading](http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0033918&type=printable)
+
+
+# Hi-Fi Mockups
+Compact View
+
+![](/writing/images/concepts-170409b-01.png)
+
+Expanded View
+
+![](/writing/images/concepts-170409b-02.png)
+
+
 ### What is the title of your project? 
 Visualizing Interactivity in Massive Multiplayer Online Role-Playing Games (MMORPG)
 
@@ -41,18 +58,3 @@ Human input.
 
 ### What are your primary data structures, how did you optimize, and does it sustain into the future?
 Time, player name, type of interaction.
-
-# Quick Links
-- [Reading List](/writing/readingList.md)
-- [Target Audience & User Persona](/writing/exercise-01-part-03-concepts.md)
-- [Most Important Reading](http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0033918&type=printable)
-
-
-# Hi-Fi Mockups
-Compact View
-
-![](/writing/images/concepts-170409b-01.png)
-
-Expanded View
-
-![](/writing/images/concepts-170409b-02.png)

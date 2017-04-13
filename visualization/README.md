@@ -135,7 +135,7 @@ for (var i = 0; i < log.length; i++) {
 }
 ```
 Sample Output
-```json
+```js
 { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.',
   user_logged_on: false,
   enchantment_success: false,
@@ -182,7 +182,7 @@ Sample Output
 ```
 
 ## Preliminary Data Structure
-```json
+```js
 {
 	"name":"Applied",
 	"class":"Templar",
