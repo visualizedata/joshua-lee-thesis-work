@@ -1,5 +1,10 @@
 # Work
 
+This section contains work and developments on the data.
+
+
+# Data
+
 Sample Log Containing Key Events
 ```js
 var log = [
