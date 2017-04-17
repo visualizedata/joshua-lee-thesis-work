@@ -2,7 +2,7 @@
 - [Written Thesis](/writing/thesis.md) / [Reading List](/writing/readingList.md)
 - [Data Structure Development](https://github.com/neuralism/thesis/tree/master/work)
 - [Visualization Development](https://neuralism.github.io/thesis/visualization/)
-- [Target Audience and Personas](/writing/exercise-01-part-03-concepts.md)
+- [Target Audience and Personas](/thesis/tree/master/writing)
 
 # Feature List
 - A platform for Aion players to review their gameplay activity in a visually more engaging way.
