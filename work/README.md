@@ -182,7 +182,7 @@ Sample Output
 ```
 
 ## Preliminary Data Structure
-```js
+```
 {
 	"name":"Applied",
 	"class":"Templar",
