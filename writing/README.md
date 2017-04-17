@@ -92,4 +92,4 @@
 
 # Lastly, a video of me playing Aion in 2012
 - [Aion 3.0 / 3.1 Elyos Templar PvP – Asperius (Siel)](https://www.youtube.com/watch?v=8AkRxaQ6_ik)
-- [I was pretty into it – a bit of a dark past in my opinion](https://www.google.com/search?num=100&q=asperius+site%3Ahttps%3A%2F%2Fforums.na.aiononline.com%2F&oq=asperius+site%3Ahttps%3A%2F%2Fforums.na.aiononline.com%2F&gs_l=serp.3...488.2580.0.2749.17.13.4.0.0.0.123.1034.11j2.13.0....0...1c.1.64.serp..3.0.0.Ftb-G-KrTT4)
+- [I was pretty into this game](https://www.google.com/search?num=100&q=asperius+site%3Ahttps%3A%2F%2Fforums.na.aiononline.com%2F&oq=asperius+site%3Ahttps%3A%2F%2Fforums.na.aiononline.com%2F&gs_l=serp.3...488.2580.0.2749.17.13.4.0.0.0.123.1034.11j2.13.0....0...1c.1.64.serp..3.0.0.Ftb-G-KrTT4)
