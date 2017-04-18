@@ -8,28 +8,103 @@ This section contains work and developments on the data.
 Sample Log Containing Key Events
 ```js
 var log = [
-    { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
     { raw: '2017.03.31 21:49:59 : You changed the connection status to Online.' },
-    { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
-    { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
-    { raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.' },
-    { raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o' },
-    { raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really' },
-    { raw: '2017.03.31 22:52:21 : The Hemorrhage Shot item has been sold by the broker.' },
-    { raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor' },
-    { raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss' },
-    { raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense' },    
     { raw: '2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.' },
     { raw: '2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.' },
     { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.' },
-    { raw: "2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved." },
+    { raw: "2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker." },   
+    { raw: "2017.03.11 01:22:52 : You sold the item." },
+    { raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o' },
+    { raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really' },
+    { raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].' },
+    { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
     { raw: "2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary's Divine Breastplate." },
-    { raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;]. ' },
-    { raw: "2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker." },
+    { raw: '2017.03.13 00:37:17 : Applied has succeeded in enchanting Provenance Greatsword to level 15.' },
+    { raw: '2017.03.10 17:30:16 : You have failed to enchant Provenance Greatsword.' },
+    { raw: '2017.03.10 17:30:16 : Failed to enchant Provenance Greatsword. The item was destroyed.' },
+    { raw: "2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved." },
+    { raw: "2017.04.03 11:34:55 : Tempering of Kaisinel's Bracelet has failed and the temperance level has decreased to 0." },    
+    { raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor' },
+    { raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss' },
+    { raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense' },    
+    { raw: '2017.03.08 01:34:00 : You used 57,090 Abyss Points.' },
+    { raw: '2017.03.08 03:06:23 : You have gained 800 Abyss Points.' },
+    { raw: '2017.03.07 23:06:04 : You have gained 150 Glory Points.' },
+    { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
+    { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
+    { raw: '2017.02.24 19:38:11 : You inflicted 1,143 damage on Wandering Shardjaw Kirrus.' },
+    { raw: '2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.' },
+    { raw: '2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.' },
+    { raw: '2017.03.31 23:29:13 : You inflicted 296 damage on Primeval Mookie.' },
+    { raw: '2017.03.03 20:09:32 : lllmackylll has inflicted 506 damage on you by using Ferocious Strike.' },
+    { raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.' }    
 ];
 ```
 
-Ruleset
+Categorized Sample Log (Further Developments Needed for Damage Section)
+```js
+var log = [
+    // User Logged On
+    { raw: '2017.03.31 21:49:59 : You changed the connection status to Online.' },
+
+    // Region Change
+    { raw: '2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.' },
+
+    // Finance    
+    { raw: '2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.' },
+    { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.' },
+
+    // Sales
+    { raw: "2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker." },   
+    { raw: "2017.03.11 01:22:52 : You sold the item." },
+
+    // Whispers
+    { raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o' },
+    { raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really' },
+    
+    // Item Acquisition
+    { raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].' },
+    
+    // Enchantment
+    { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
+    { raw: "2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary's Divine Breastplate." },
+    { raw: '2017.03.13 00:37:17 : Applied has succeeded in enchanting Provenance Greatsword to level 15.' },
+    { raw: '2017.03.10 17:30:16 : You have failed to enchant Provenance Greatsword.' },
+    { raw: '2017.03.10 17:30:16 : Failed to enchant Provenance Greatsword. The item was destroyed.' },
+    
+    // Temper
+    { raw: "2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved." },
+    { raw: "2017.04.03 11:34:55 : Tempering of Kaisinel's Bracelet has failed and the temperance level has decreased to 0." },    
+    
+    // Quests
+    { raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor' },
+    { raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss' },
+    { raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense' },    
+    
+    // Abyss Points
+    { raw: '2017.03.08 01:34:00 : You used 57,090 Abyss Points.' },
+    { raw: '2017.03.08 03:06:23 : You have gained 800 Abyss Points.' },
+    
+    // Glory Points
+    { raw: '2017.03.07 23:06:04 : You have gained 150 Glory Points.' },
+    
+    // Damage (Outgoing) to Player Character
+    { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
+    { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
+    { raw: '2017.02.24 19:38:11 : You inflicted 1,143 damage on Wandering Shardjaw Kirrus.' },
+    
+    // Damage (Outgoing) to Non-Player Character
+    { raw: '2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.' },
+    { raw: '2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.' },
+    { raw: '2017.03.31 23:29:13 : You inflicted 296 damage on Primeval Mookie.' },
+    
+    // Damage (Incoming)
+    { raw: '2017.03.03 20:09:32 : lllmackylll has inflicted 506 damage on you by using Ferocious Strike.' },
+    { raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.' }    
+];
+```
+
+Ruleset (Further Developments Needed for Damage Section)
 ```js
 for (var i = 0; i < log.length; i++) {
     
@@ -39,101 +114,157 @@ for (var i = 0; i < log.length; i++) {
     // User Logged On
     log[i].user_logged_on = log[i].raw.indexOf('You changed the connection status to Online') >= 0;
     
-    // Enchantment Success
-    log[i].enchantment_success = log[i].raw.indexOf('You successfully enchanted') >= 0;
-    if (log[i].enchantment_success) 
-      log[i].enchantment_item = log[i].raw.split('enchanted ')[1].split(' by')[0];
-    if (log[i].enchantment_success) 
-      log[i].enchantment_increment = Number(log[i].raw.split('+')[1].split('.')[0]);
-
+    // Enchant Item
+    if (log[i].raw.indexOf('You successfully enchanted') >= 0) {
+        log[i].enchant_item = log[i].raw.split('enchanted ')[1].split(' by')[0];
+        log[i].enchant_increase = log[i].raw.split('+')[1].split('.')[0];
+    } else {
+        log[i].enchant_item = false;
+        log[i].enchant_increase = false;
+    }
+    
     // Enchantment Failure
-    log[i].enchantment_failure = log[i].raw.indexOf('You have failed to enchant') >= 0;
-    if (log[i].enchantment_failure) 
-      log[i].enchantment_item = log[i].raw.split('enchant ')[1].split('.')[0];    
+    if (log[i].raw.indexOf('You have failed to enchant') >= 0) {
+        log[i].enchant_item = log[i].raw.split('enchant ')[1].split('.')[0]; 
+        log[i].enchant_item_increase = false;       
+    } else {
+        log[i].enchant_item = false;
+        log[i].enchant_item_increase = false;        
+    }
     
     // Tempering Success
-    log[i].tempering_success = log[i].raw.indexOf('You have successfully tempered') >= 0;
-    if (log[i].tempering_success) 
-      log[i].tempering_item = log[i].raw.split('tempered ')[1].split('.')[0];
-    if (log[i].tempering_success) 
-      log[i].tempering_increment = log[i].raw.split('+')[1].split(' temperance')[0];
-    
-    // Damage Inflicted
-    log[i].damage_inflicted = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0;
-    if (log[i].damage_inflicted) 
-      log[i].damage_amount = Number(log[i].raw.split('inflicted ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
-    if (log[i].damage_inflicted) 
-      log[i].damage_target = log[i].raw.split('on ')[1].split(' by')[0];
-    if (log[i].damage_inflicted) 
-      log[i].damage_skill = log[i].raw.split('using ')[1].split('.')[0];
-    
-    // Damage Received
-    log[i].damage_received = log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0;
-    if (log[i].damage_received) 
-      log[i].damage_amount = Number(log[i].raw.split('received ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
-    if (log[i].damage_received) 
-      log[i].damage_target = log[i].raw.split('from ')[1].split('.')[0];
-    
-    // Critical Hit
-    log[i].critical_hit = log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0 || log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0 && log[i].raw.indexOf('Critical Hit!') >= 0;
+    if ( log[i].raw.indexOf('You have successfully tempered') >= 0) {
+        log[i].temper_item = log[i].raw.split('tempered ')[1].split('.')[0];
+        log[i].temper_increase = log[i].raw.split('+')[1].split(' temperance')[0];
+    } else {
+        log[i].temper_item = false;
+        log[i].temper_increase = false;
+    }
 
-    // Outgoing Whisper
-    log[i].whisper_outgoing = log[i].raw.indexOf('You Whisper to') >= 0;
-    if (log[i].whisper_outgoing) 
-      log[i].whisper_outgoing_name = log[i].raw.split('charname:')[1].split(';')[0];
+    // Damage Inflicted
+    if (log[i].raw.indexOf('You inflicted') >= 0 && log[i].raw.indexOf('damage on') >= 0) {
+        
+        log[i].damage_inflicted = Number(log[i].raw.split('inflicted ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+        log[i].damage_target = log[i].raw.split('on ')[1].split(' by')[0].split('.')[0];
+        log[i].damage_critical = log[i].raw.indexOf('Critical Hit!') >= 0;
+        
+        // if skill is indicated
+        if (log[i].raw.indexOf('by using') >= 0) {
+            log[i].damage_skill = String(log[i].raw.split('using ')[1]).split('.')[0];
+        }
+        
+        // check if target is monster (if target has more than 1 word in its name, its most likely a monster)
+        if (log[i].damage_target.split(' ').length > 1) {
+            log[i].damage_target_is_npc = true;
+            log[i].damage_target_is_player = false;
+        } 
+        // else it's a player
+        else if (log[i].damage_target.split(' ').length == 1) {
+            log[i].damage_target_is_npc = false;
+            log[i].damage_target_is_player = true;
+        }
+    }
+
+    // =======================
+    // Damage Received Section
+    // =======================
+    // Instance 1: "you received" * "damage from" // (source indicated) (skill not indicated) (critical indicated)
+    // Instance 2: "you receive" * "damage due to" // (source not indicated) (skill indicated) (critical not indicated)
+    // Instance 3: "you receive" * "damage due to the effect of" (source not indicated) (skill indicated) (critical not indicated)
+    // Instance 4: "has inflicted" * "damage on you by using" (source indicated) (skill indicated) (critical indicated) 
     
-    // Incoming Whisper
-    log[i].whisper_incoming = log[i].raw.indexOf('] Whispers:') >= 0;
-    if (log[i].whisper_incoming) 
-      log[i].whisper_incoming_name = log[i].raw.split('charname:')[1].split(';')[0];    
+    // // Damage Received (Instance 1) (target indicated) (skill not indicated) (critical indicated)
+    // if (log[i].raw.indexOf('You received') >= 0 && log[i].raw.indexOf('damage from') >= 0) {
+    //     log[i].damage_received = Number(log[i].raw.split('received ')[1].split(' damage')[0].replace(',', '').replace(',', '').replace(',', ''));
+    //     log[i].damage_skill = false;
+    //     log[i].damage_source = log[i].raw.split('from ')[1].split('.')[0];
+    //     log[i].damage_critical = log[i].raw.indexOf('Critical Hit!') >= 0;
+    // }
     
+    // // You receive 121 damage due to Lava Singe. 
+    // // Damage Received (Instance 2) (source not indicated) (skill indicated) (critical not indicated)
+    // if (log[i].raw.indexOf('You receive ') >= 0 && log[i].raw.indexOf('damage due to') >= 0) {
+    //     log[i].damage_received = log[i].raw.split('receive ')[1].split(' damage')[0];
+    //     log[i].damage_skill = false; 
+    //     log[i].damage_source = false;
+    // }
+
+    // Whisper To
+    if (log[i].raw.indexOf('You Whisper to') >= 0) {
+        log[i].whisper_to = log[i].raw.split('charname:')[1].split(';')[0];
+    } else {
+        log[i].whisper_to = false;
+    }
+    
+    // Whisper From
+    if (log[i].raw.indexOf('] Whispers:') >= 0) {
+        log[i].whisper_from = log[i].raw.split('charname:')[1].split(';')[0];  
+    } else {
+        log[i].whisper_from = false;
+    }
+
     // Money Earned
-    log[i].money_earned = log[i].raw.indexOf('You have earned') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
-    if (log[i].money_earned) 
-      log[i].money_earned_amount = Number(log[i].raw.split('earned ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].raw.indexOf('You have earned') >= 0 && log[i].raw.indexOf('Kinah') >= 0) {
+        log[i].money_earned = Number(log[i].raw.split('earned ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    } else {
+        log[i].money_earned = false;
+    }
     
     // Money Spent
-    log[i].money_spent = log[i].raw.indexOf('You spent') >= 0 && log[i].raw.indexOf('Kinah') >= 0;
-    if (log[i].money_spent) 
-      log[i].money_spent_amount = Number(log[i].raw.split('spent ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    if (log[i].raw.indexOf('You spent') >= 0 && log[i].raw.indexOf('Kinah') >= 0) {
+        log[i].money_spent = Number(log[i].raw.split('spent ')[1].split(' Kinah')[0].replace(',', '').replace(',', '').replace(',', '').replace(',', '').replace(',', ''));
+    } else {
+        log[i].money_spent = false;
+    }
   
     // Item Acquired
-    log[i].item_acquired = log[i].raw.indexOf('You have acquired') >= 0;
-    if (log[i].item_acquired) 
-      log[i].item_acquired_name = log[i].raw.split('acquired ')[1].split('.')[0];
+    if (log[i].raw.indexOf('You have acquired') >= 0) {
+        log[i].item_acquired = log[i].raw.split('acquired ')[1].split('.')[0];
+    } else {
+        log[i].item_acquired = false;
+    }
     
-    // Item Sold to NPC
-    log[i].item_sold_npc = log[i].raw.indexOf('You sold the item') >= 0;
+    // Item Sold to NPC (no item name)
+    log[i].item_sold_to_npc = log[i].raw.indexOf('You sold the item') >= 0;
     
     // Item Sold on Broker    
-    log[i].item_sold_broker = log[i].raw.indexOf('item has been sold by the broker') >= 0;
-    if (log[i].item_sold_broker) 
-      log[i].item_name = log[i].raw.split('The ')[1].split(' item')[0];
-        
+    if (log[i].raw.indexOf('item has been sold by the broker') >= 0) {
+        log[i].item_sold_on_broker = log[i].raw.split('The ')[1].split(' item')[0];   
+    } else {
+        log[i].item_sold_on_broker = false;
+    }
+
     // Quest Acquired
-    log[i].quest_acquired = log[i].raw.indexOf('Quest acquired') >= 0;
-    if (log[i].quest_acquired) 
-      log[i].quest_name = log[i].raw.split('acquired: ')[1];
+    if (log[i].raw.indexOf('Quest acquired') >= 0) {
+        log[i].quest_acquired = log[i].raw.split('acquired: ')[1];
+    } else {
+        log[i].quest_acquired = false;
+    }
     
     // Quest Updated
-    log[i].quest_updated = log[i].raw.indexOf('Quest updated') >= 0;
-    if (log[i].quest_updated) 
-      log[i].quest_name = log[i].raw.split('updated: ')[1];
+    if (log[i].raw.indexOf('Quest updated') >= 0) {
+        log[i].quest_updated = log[i].raw.split('updated: ')[1];
+    } else {
+        log[i].quest_updated = false;
+    }
     
     // Quest Complete
-    log[i].quest_completed = log[i].raw.indexOf('Quest complete') >= 0;
-    if (log[i].quest_completed) 
-      log[i].quest_name = log[i].raw.split('complete: ')[1];
+    if (log[i].raw.indexOf('Quest complete') >= 0) {
+        log[i].quest_completed = log[i].raw.split('complete: ')[1];
+    }
     
     // Joined Group
     log[i].joined_group = log[i].raw.indexOf('You have joined the group') >= 0;
     
     // Region Travel
-    log[i].region_change = log[i].raw.indexOf('You have joined the') >= 0 && log[i].raw.indexOf('region channel') >= 0;
-    if (log[i].region_change) 
-      log[i].region_entered = log[i].raw.split("You have joined the ")[1].split(' region channel')[0]
+    if (log[i].raw.indexOf('You have joined the') >= 0 && log[i].raw.indexOf('region channel') >= 0) {
+        log[i].region_changed_to = log[i].raw.split("You have joined the ")[1].split(' region channel')[0];
+    } else {
+        log[i].region_changed_to = false;  
+    }
 
-    console.log(log[i]);
+    // console.log(log[i]);
+    
     // instead of logging, append all the results to an array. (create an empty array at the top)
     // then use the fs module and then write that array in to a text file.
     // 
@@ -141,49 +272,581 @@ for (var i = 0; i < log.length; i++) {
 ```
 Sample Output
 ```js
-{ raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.',
-  user_logged_on: false,
-  enchantment_success: false,
-  enchantment_failure: false,
-  tempering_success: false,
-  damage_inflicted: false,
-  damage_received: false,
-  critical_hit: false,
-  whisper_outgoing: false,
-  whisper_incoming: false,
-  money_earned: false,
-  money_spent: true,
-  money_spent_amount: 218850000,
-  item_acquired: false,
-  item_sold_npc: false,
-  item_sold_broker: false,
-  quest_acquired: false,
-  quest_updated: false,
-  quest_completed: false,
-  joined_group: false,
-  region_change: false }
-{ raw: '2017.04.03 11:35:51 : You have successfully tempered Kaisinel\'s Bracelet. +1 temperance level achieved.',
-  user_logged_on: false,
-  enchantment_success: false,
-  enchantment_failure: false,
-  tempering_success: true,
-  tempering_item: 'Kaisinel\'s Bracelet',
-  tempering_increment: 1,
-  damage_inflicted: false,
-  damage_received: false,
-  critical_hit: false,
-  whisper_outgoing: false,
-  whisper_incoming: false,
+{ raw: '2017.03.31 21:49:59 : You changed the connection status to Online.',
+  user_logged_on: true,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
   money_earned: false,
   money_spent: false,
   item_acquired: false,
-  item_sold_npc: false,
-  item_sold_broker: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
   quest_acquired: false,
   quest_updated: false,
-  quest_completed: false,
   joined_group: false,
-  region_change: false }
+  region_changed_to: false }
+{ raw: '2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: 'Idgel Dome Landmark' }
+{ raw: '2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: 350476629,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: 218850000,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: 'Ancient Manastone: Magic Suppression +30',
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.11 01:22:52 : You sold the item.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: true,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: 'Kinnari',
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: 'Kinnari',
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: '[item:188052501;ver8;;;;]',
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: '2',
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary\'s Divine Breastplate.',
+  user_logged_on: false,
+  enchant_item: 'Mystic Guardian Functionary\'s Divine Breastplate',
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.13 00:37:17 : Applied has succeeded in enchanting Provenance Greatsword to level 15.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.10 17:30:16 : You have failed to enchant Provenance Greatsword.',
+  user_logged_on: false,
+  enchant_item: 'Provenance Greatsword',
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.10 17:30:16 : Failed to enchant Provenance Greatsword. The item was destroyed.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.03 11:35:51 : You have successfully tempered Kaisinel\'s Bracelet. +1 temperance level achieved.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: 'Kaisinel\'s Bracelet',
+  temper_increase: '1',
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.03 11:34:55 : Tempering of Kaisinel\'s Bracelet has failed and the temperance level has decreased to 0.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: '[Prestige/Daily] Prestigious Valor',
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: '[Urgent Order] Protect the Upper Abyss',
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  quest_completed: '[Alliance] Keep Up the Defense',
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.08 01:34:00 : You used 57,090 Abyss Points.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.08 03:06:23 : You have gained 800 Abyss Points.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.07 23:06:04 : You have gained 150 Glory Points.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 1399,
+  damage_target: 'LeonTyrron-SL',
+  damage_critical: true,
+  damage_skill: 'Ferocious Strike',
+  damage_target_is_npc: false,
+  damage_target_is_player: true,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 1075,
+  damage_target: 'LindWanijima-SL',
+  damage_critical: false,
+  damage_skill: 'Wrathful Explosion',
+  damage_target_is_npc: false,
+  damage_target_is_player: true,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.02.24 19:38:11 : You inflicted 1,143 damage on Wandering Shardjaw Kirrus.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 1143,
+  damage_target: 'Wandering Shardjaw Kirrus',
+  damage_critical: false,
+  damage_target_is_npc: true,
+  damage_target_is_player: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 4121,
+  damage_target: 'Primeval Mookie',
+  damage_critical: true,
+  damage_skill: 'Tumultuos Surge',
+  damage_target_is_npc: true,
+  damage_target_is_player: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 2005,
+  damage_target: 'Primeval Mookie',
+  damage_critical: false,
+  damage_skill: 'Tumultuos Surge',
+  damage_target_is_npc: true,
+  damage_target_is_player: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.31 23:29:13 : You inflicted 296 damage on Primeval Mookie.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  damage_inflicted: 296,
+  damage_target: 'Primeval Mookie',
+  damage_critical: false,
+  damage_target_is_npc: true,
+  damage_target_is_player: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.03.03 20:09:32 : lllmackylll has inflicted 506 damage on you by using Ferocious Strike.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
+{ raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.',
+  user_logged_on: false,
+  enchant_item: false,
+  enchant_increase: false,
+  enchant_item_increase: false,
+  temper_item: false,
+  temper_increase: false,
+  whisper_to: false,
+  whisper_from: false,
+  money_earned: false,
+  money_spent: false,
+  item_acquired: false,
+  item_sold_to_npc: false,
+  item_sold_on_broker: false,
+  quest_acquired: false,
+  quest_updated: false,
+  joined_group: false,
+  region_changed_to: false }
 ```
 
 ## Preliminary Data Structure
