@@ -431,6 +431,47 @@ Sample Output
   damage_critical: false }
 ```
 
+## Monsters with one word in their names
+
+```
+"Abunka",
+"Abyla",
+"Acolyte",
+"Aetherflame",
+"Aetherguard",
+"Aetherogeneticist",
+"Aethertech_Barricade",
+"Aethertech_BindPoint01",
+"Aethertech_BindPoint04",
+"Agrima",
+"Agrint",
+"Ahserion",
+"Aionguard",
+"Airon",
+"Aishi",
+"Akhal",
+"Alarm",
+"Aldreen",
+"Ampha",
+"Andrastar",
+"Andre",
+"Angparinerk",
+"Anubite",
+"Anvilface",
+"Arachna",
+"Archer",
+"Arges",
+"Argush",
+"Asan",
+"Asmodian_Polymorph_Chihuahua",
+"Asmodian_Polymorph_Dobermann",
+"Asmodian_Polymorph_Lamb",
+"Asmodian_Polymorph_Pomeranian",
+"Assailant",
+"Assassin",
+...
+```
+
 ## Preliminary Data Structure
 ```
 {
