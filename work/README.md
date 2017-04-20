@@ -136,7 +136,7 @@ lr.on('line', function (line) {
     // Raw
     entry.raw = line;
   
-	// User Logged On
+	  // User Logged On
     // 2017.03.31 21:49:59 : You changed the connection status to Online.
     entry.user_logged_on = line.indexOf('You changed the connection status to Online') >= 0;
 
