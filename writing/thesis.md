@@ -1,3 +1,8 @@
+Feed back from Daniel:
+
+Don't use the word "they" cus it's like categrorizing them 
+
+Consider using words like "players", however find a more precise word? Also, would it be may be too repetitive to keep saying "players"?
 
 ## Introduction
 
