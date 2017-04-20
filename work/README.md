@@ -51,69 +51,6 @@ Sample Log Containing Key Events
 2017.02.25 05:28:01 : You received 108 poisoning damage due to the effect of Wide Area Poison Slash. 
 ```
 
-Categorized Sample Log (Further Developments Needed for Damage Section)
-```js
-var log = [
-    // User Logged On
-    { raw: '2017.03.31 21:49:59 : You changed the connection status to Online.' },
-
-    // Region Change
-    { raw: '2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.' },
-
-    // Finance    
-    { raw: '2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.' },
-    { raw: '2017.04.03 11:35:41 : You spent 218,850,000 Kinah.' },
-
-    // Sales
-    { raw: "2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker." },   
-    { raw: "2017.03.11 01:22:52 : You sold the item." },
-
-    // Whispers
-    { raw: '2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o' },
-    { raw: '2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really' },
-    
-    // Item Acquisition
-    { raw: '2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].' },
-    
-    // Enchantment
-    { raw: '2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.' },
-    { raw: "2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary's Divine Breastplate." },
-    { raw: '2017.03.13 00:37:17 : Applied has succeeded in enchanting Provenance Greatsword to level 15.' },
-    { raw: '2017.03.10 17:30:16 : You have failed to enchant Provenance Greatsword.' },
-    { raw: '2017.03.10 17:30:16 : Failed to enchant Provenance Greatsword. The item was destroyed.' },
-    
-    // Temper
-    { raw: "2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved." },
-    { raw: "2017.04.03 11:34:55 : Tempering of Kaisinel's Bracelet has failed and the temperance level has decreased to 0." },    
-    
-    // Quests
-    { raw: '2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor' },
-    { raw: '2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss' },
-    { raw: '2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense' },    
-    
-    // Abyss Points
-    { raw: '2017.03.08 01:34:00 : You used 57,090 Abyss Points.' },
-    { raw: '2017.03.08 03:06:23 : You have gained 800 Abyss Points.' },
-    
-    // Glory Points
-    { raw: '2017.03.07 23:06:04 : You have gained 150 Glory Points.' },
-    
-    // Damage (Outgoing) to Player Character
-    { raw: '2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.' },
-    { raw: '2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.' },
-    { raw: '2017.02.24 19:38:11 : You inflicted 1,143 damage on Wandering Shardjaw Kirrus.' },
-    
-    // Damage (Outgoing) to Non-Player Character
-    { raw: '2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.' },
-    { raw: '2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.' },
-    { raw: '2017.03.31 23:29:13 : You inflicted 296 damage on Primeval Mookie.' },
-    
-    // Damage (Incoming)
-    { raw: '2017.03.03 20:09:32 : lllmackylll has inflicted 506 damage on you by using Ferocious Strike.' },
-    { raw: '2017.04.01 01:39:19 : Critical Hit! You received 362 damage from Driver-KR.' }    
-];
-```
-
 Ruleset (Further Developments Needed for Damage Section)
 ```js
 var fs = require('fs');
