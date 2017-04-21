@@ -9,93 +9,226 @@ Sample Log Containing Key Events
 ```
 2017.03.31 21:49:59 : You changed the connection status to Online.
 2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.
+2017.04.01 11:59:43 : You have played for 10 hour(s). Please take a break. 
+2017.04.04 22:36:20 : AOEhoar-SL has logged in. 
+2017.04.04 22:26:52 : AOEhoar has logged in. 
+2017.04.05 22:10:37 : Visvasan-SL has logged out. 
+2017.04.04 23:46:50 : Visvasan has logged out. 
+2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o
+2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really
 2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.
 2017.04.03 11:35:41 : You spent 218,850,000 Kinah.
 2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker.   
 2017.03.11 01:22:52 : You sold the item.
-2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o
-2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really
 2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].
-2017.04.05 15:10:59 : You have acquired 10,000 [item:188100335;ver8;;;;](s).
 2017.02.24 20:03:45 : You have acquired [item:182215599;ver7;;;;] and stored it in your special cube. 
+2017.04.05 15:10:59 : You have acquired 10,000 [item:188100335;ver8;;;;](s).
 2017.04.04 23:53:09 : You have acquired 12,000 [item:188100391;ver8;;;;]s and stored them in your special cube. 
 2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.
-2017.02.26 14:10:02 : You have failed to enchant Mystic Guardian Functionary's Divine Breastplate.
-2017.03.13 00:37:17 : Applied has succeeded in enchanting Provenance Greatsword to level 15.
 2017.03.10 17:30:16 : You have failed to enchant Provenance Greatsword.
-2017.03.10 17:30:16 : Failed to enchant Provenance Greatsword. The item was destroyed.
 2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved.
 2017.04.03 11:34:55 : Tempering of Kaisinel's Bracelet has failed and the temperance level has decreased to 0.
 2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor
 2017.04.04 21:06:01 : Quest updated: [Urgent Order] Protect the Upper Abyss
 2017.04.06 23:56:22 : Quest complete: [Alliance] Keep Up the Defense
-2017.03.08 01:34:00 : You used 57,090 Abyss Points.
 2017.03.08 03:06:23 : You have gained 800 Abyss Points.
+2017.03.08 01:34:00 : You used 57,090 Abyss Points.
 2017.03.07 23:06:04 : You have gained 150 Glory Points.
 2017.03.31 22:36:37 : You inflicted 113 damage on Crowley-SL.
-2017.03.31 22:36:37 : Critical Hit! You inflicted 1,136 critical damage on Crowley-SL.
-2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.
-2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.
-2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.
-2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.
 2017.03.31 23:29:13 : You inflicted 296 damage on Primeval Mookie.
-2017.04.05 21:26:13 : Critical Hit! You inflicted 2,509 critical damage on Prime Tumon I.
+2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.
+2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.
 2017.03.02 10:22:42 : You received 1,226 damage from Beritra's Rebels Raider . 
-2017.02.25 05:28:22 : Critical Hit! You received 1,130 damage from Beritra's Rebels Raider . 
-2017.03.31 22:38:00 : LindWanijima-SL has inflicted 573 damage on you by using Canted Shot.         
-2017.03.31 22:37:59 : Critical Hit!LindWanijima-SL has inflicted 1,138 damage on you by using Crosstrigger.   
+2017.03.31 22:38:00 : LindWanijima-SL has inflicted 5,730 damage on you by using Canted Shot.         
 2017.04.05 21:05:59 : You received 2,726 damage due to Magma Burst. 
 2017.02.26 12:05:44 : You receive 1,022 damage due to Fluttered Note Effect. 
-2017.04.03 11:15:02 : Critical Hit!You receive 179 damage due to Chain of Earth. 
-2017.04.06 21:41:11 : You received 84 bleeding damage due to the effect of Far Wound.
-2017.02.25 05:28:01 : You received 108 poisoning damage due to the effect of Wide Area Poison Slash. 
+2017.04.06 21:41:11 : You received 1,084 bleeding damage due to the effect of Far Wound.
+2017.02.25 05:28:01 : You received 1,018 poisoning damage due to the effect of Wide Area Poison Slash. 
+2017.02.25 05:28:22 : Critical Hit! You received 1,130 damage from Beritra's Rebels Raider . 
+2017.03.31 22:36:37 : Critical Hit! You inflicted 1,136 critical damage on Crowley-SL.
+2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.
+2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.
+2017.04.05 21:26:13 : Critical Hit! You inflicted 2,509 critical damage on Prime Tumon I.
+2017.03.31 22:37:59 : Critical Hit!LindWanijima-SL has inflicted 1,138 damage on you by using Crosstrigger.   
+2017.04.03 11:15:02 : Critical Hit!You receive 1,079 damage due to Chain of Earth. 
 ```
 
-Ruleset (Further Developments Needed for Damage Section)
+Ruleset
 ```js
-var fs = require('fs');
+/**
+ *  Log Parser
+ *  
+ *
+ */
+
 var request = require('request');
+var fs = require('fs');
 var LineByLineReader = require('line-by-line'); 
-var lr = new LineByLineReader('data/Chat-Goof-170417b.txt');
+var lr = new LineByLineReader('data/sample-unique.txt');
+// var lr = new LineByLineReader('data/Chat-Goof-170417b.txt');
 
-var monsters = JSON.parse(fs.readFileSync('data/monsters-one-word.json'));
+var mononymous_monsters = JSON.parse(fs.readFileSync('data/mononymous-monsters.json'));
+var item_api_url = 'http://api.notaion.com/?item&id=';
+var num_items = 0;
+var num_items_processed = 0;
 var log = [];
-var test = [];
 
-lr.on('error', function (err) {
-	// 'err' contains error object
-});
-
+lr.on('error', function (err) { console.log(err); });
 lr.on('line', function (line) {
 	
     var entry = new Object();
+    var checker = 0;
     
-    // Raw
-    entry.raw = line;
+    // =========
+    //  Presets
+    // =========
+    
+    // Setting all attributes to false first and
+    // switch them to true as we go down the rule list
+
+    entry.raw = line.trim();
+    entry.time = convert_time(entry.raw);
+    entry.logged_in = false;
+    entry.region = false;
+    entry.hours_played = false;
+    entry.friend_logged_in = false;
+    entry.friend_logged_out = false;
+    entry.whisper_from = false;
+    entry.whisper_to = false;
+    entry.money_earned = false;
+    entry.money_spent = false;
+    entry.ap_earned = false;
+    entry.ap_spent = false;
+    entry.gp_earned = false;
+    entry.item_sold_broker = false;
+    entry.item_sold_npc = false;
+    entry.item_acquired = false;
+    entry.item_id = false;   
+    entry.item_quantity = false;
+    entry.enchant_item = false;
+    entry.enchant_increase = false;
+    entry.temper_item = false;
+    entry.temper_increase = false;
+    entry.quest_acquired = false;
+    entry.quest_updated = false;
+    entry.quest_completed = false;
+    entry.damage_inflicted = false;
+    entry.damage_received = false;
+    entry.damage_critical = false;
+    entry.damage_skill = false;
+    entry.damage_target = false;
+    entry.damage_target_npc = false;
+    entry.damage_target_player = false;
+    entry.damage_source = false;
+    entry.damage_source_npc = false;
+    entry.damage_source_player = false;
+    
+    // ========
+    //  Player
+    // ========
   
-	  // User Logged On
+    // Player Logged In
     // 2017.03.31 21:49:59 : You changed the connection status to Online.
-    entry.user_logged_on = line.indexOf('You changed the connection status to Online') >= 0;
+
+    entry.logged_in = line.indexOf('You changed the connection status to Online') >= 0;
 
     // Region Change
     // 2017.03.31 22:33:09 : You have joined the Idgel Dome Landmark region channel.
+
     if (line.indexOf('You have joined the') >= 0 && line.indexOf('region channel') >= 0) {
-        entry.region_changed_to = line.split("You have joined the ")[1].split(' region channel')[0];
-    } else {
-        entry.region_changed_to = false;  
+        entry.region = line.split("You have joined the ")[1].split(' region channel')[0];
     }
 
-    // =======
-    // Finance    
-    // =======
+    // Hours Played
+    // 2017.04.01 11:59:43 : You have played for 10 hour(s). Please take a break. 
+
+    if (line.indexOf(' : You have played for') >= 0) {
+        entry.hours_played = Number(line.split('for ')[1].split(' hour')[0].replace(/,/gi, ''));
+    }
+
+    // =========
+    //  Friends
+    // =========
+
+    // Friend Logged In
+    // 2017.04.04 22:36:20 : AOEhoar-SL has logged in. 
+    // 2017.04.04 22:26:52 : AOEhoar has logged in. 
+
+    if (line.indexOf('has logged in') >= 0) {
+
+        // check if name has server suffix
+        if (line.indexOf('-') >= 0) {
+
+            // if there is, assign attribute this way
+            entry.friend_logged_in = line.split(' : ')[1].split(' has')[0].split('-')[0];
+        }
+
+        // if not
+        else {
+
+            // assign attribute this way
+            entry.friend_logged_in = line.split(' : ')[1].split(' has')[0];
+        }
+    }
+
+    // Friend Logged Out
+    // 2017.04.05 22:10:37 : Visvasan-SL has logged out. 
+    // 2017.04.04 23:46:50 : Visvasan has logged out. 
+
+    if (line.indexOf('has logged out') >= 0) {
+
+        // check if name has server suffix
+        if (line.indexOf('-') >= 0) {
+
+            // if there is, assign attribute this way
+            entry.friend_logged_out = line.split(' : ')[1].split(' has')[0].split('-')[0];
+        }
+
+        // if not
+        else {
+
+            // assign attribute this way
+            entry.friend_logged_out = line.split(' : ')[1].split(' has')[0];
+        }
+    }
+
+    // ==========
+    //  Whispers
+    // ==========
+    
+    // Whisper From
+    // 2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o
+  
+    if (line.indexOf('] Whispers:') >= 0) {
+
+        // assign name
+        entry.whisper_from = line.split('charname:')[1].split(';')[0];
+
+        // ommit chat content from raw string
+        entry.raw = entry.raw.split('] Whispers: ')[0] + '] Whispers:';
+    }
+    
+    // Whisper To
+    // 2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really
+    
+    if (line.indexOf('You Whisper to') >= 0) {
+
+        // assign name
+        entry.whisper_to = line.split('charname:')[1].split(';')[0];
+
+        // ommit chat content from raw string
+        entry.raw = entry.raw.split(']: ')[0] + ']:';
+    }   
+
+    // =========
+    //  Finance    
+    // =========
     
     // Money Earned
     // 2017.04.03 20:15:21 : You have earned 350,476,629 Kinah.
     
     if (line.indexOf('You have earned') >= 0 && line.indexOf('Kinah') >= 0) {
         entry.money_earned = Number(line.split('earned ')[1].split(' Kinah')[0].replace(/,/gi, ''));
-    } else {
-        entry.money_earned = false;
     }
     
     // Money Spent
@@ -103,93 +236,64 @@ lr.on('line', function (line) {
     
     if (line.indexOf('You spent') >= 0 && line.indexOf('Kinah') >= 0) {
         entry.money_spent = Number(line.split('spent ')[1].split(' Kinah')[0].replace(/,/gi, ''));
-    } else {
-        entry.money_spent = false;
     }
     
-    // =====
-    // Sales
-    // =====
+    // =======
+    //  Sales
+    // =======
     
     // Item Sold on Broker
     // 2017.04.01 00:34:29 : The Ancient Manastone: Magic Suppression +30 item has been sold by the broker.
     
     if (line.indexOf('item has been sold by the broker') >= 0) {
-        entry.item_sold_on_broker = line.split('The ')[1].split(' item')[0];   
-    } else {
-        entry.item_sold_on_broker = false;
-    }    
+        entry.item_sold_broker = line.split('The ')[1].split(' item')[0];   
+    }
     
     // Item Sold to NPC
     // 2017.03.11 01:22:52 : You sold the item.
     
-    entry.item_sold_to_npc = line.indexOf('You sold the item') >= 0;
+    entry.item_sold_npc = line.indexOf('You sold the item') >= 0;
+
     
-    // ========
-    // Whispers
-    // ========
+    // ==================
+    //  Item Acquisition
+    // ==================
     
-    // Whisper From
-    // 2017.02.24 14:52:22 : [charname:Kinnari;0.6275 1.0000 0.6275] Whispers: u back? o.o
-  
-    if (line.indexOf('] Whispers:') >= 0) {
-        entry.whisper_from = line.split('charname:')[1].split(';')[0];  
-    } else {
-        entry.whisper_from = false;
-    }
-    
-    // Whisper To
-    // 2017.02.24 14:52:31 : You Whisper to [charname:Kinnari;0.6275 1.0000 0.6275]: not really
-    
-    if (line.indexOf('You Whisper to') >= 0) {
-        entry.whisper_to = line.split('charname:')[1].split(';')[0];
-    } else {
-        entry.whisper_to = false;
-    }  
-    
-    // ================
-    // Item Acquisition
-    // ================
-    
-    // Set attributes to false first and overide if true
-    
-    entry.item_acquired = false;
-    entry.item_quantity = false;
-    
-    // Single Item (Stored in Inventory and Special Cube)
+    // Single Item (Stored in Inventory or Special Cube)
     // 2017.04.01 01:11:16 : You have acquired [item:188052501;ver8;;;;].
     // 2017.02.24 20:03:45 : You have acquired [item:182215599;ver7;;;;] and stored it in your special cube. 
 
     if (line.indexOf('You have acquired [item:') >= 0) {
-        entry.item_acquired = Number(line.split('item:')[1].split(';')[0]);
+        entry.item_acquired = true;
+        entry.item_id = Number(line.split('item:')[1].split(';')[0]);
         entry.item_quantity = 1;
+        num_items++;
     }
     
     // Multiple Items Stored in Inventory
     // 2017.04.05 15:10:59 : You have acquired 10,000 [item:188100335;ver8;;;;](s).
     
     if (line.indexOf('You have acquired') >= 0 && line.indexOf('(s)') >= 0 ) {
-        entry.item_acquired = Number(line.split('item:')[1].split(';')[0]);
+        entry.item_acquired = true;        
+        entry.item_id = Number(line.split('item:')[1].split(';')[0]);
         entry.item_quantity = Number(line.split(' [item')[0].split('acquired ')[1].replace(/,/gi, ''));
+        num_items++;        
     }
     
-    // Multiple Items Stored in Cube 
+    // Multiple Items Stored in Special Cube 
     // 2017.04.04 23:53:09 : You have acquired 100 [item:188100391;ver8;;;;]s and stored them in your special cube. 
     
     if (line.indexOf('You have acquired') >= 0 && line.indexOf(']s') >= 0 && line.indexOf('special cube') >= 0 ) {
-        entry.item_acquired = Number(line.split('item:')[1].split(';')[0]);
+        entry.item_acquired = true;
+        entry.item_id = Number(line.split('item:')[1].split(';')[0]);
         entry.item_quantity = Number(line.split(' [item')[0].split('acquired ')[1].replace(/,/gi, ''));
+        num_items++;        
     }
     
-    // ===========
-    // Enchantment
-    // ===========
+    // =============
+    //  Enchantment
+    // =============
 
-    // Set attributes to false first and overide if true
-    
-    entry.enchant_item = false;
-    entry.enchant_increase = false;
-    
     // Enchantment Success
     // 2017.03.10 03:37:34 : You successfully enchanted Provenance Greatsword by +2.    
     
@@ -203,17 +307,13 @@ lr.on('line', function (line) {
 
     if (line.indexOf('You have failed to enchant') >= 0) {
         entry.enchant_item = line.split('enchant ')[1].split('.')[0]; 
-        entry.enchant_increase = false;       
     }
+
+    // ===========
+    //  Temperace
+    // ===========
     
-    // =========
-    // Temperace
-    // =========
-    
-    entry.temper_item = false;
-    entry.temper_increase = false;
-    
-    // Temper Success
+    // Tempering Success
     // 2017.04.03 11:35:51 : You have successfully tempered Kaisinel's Bracelet. +1 temperance level achieved.
     
     if (line.indexOf('You have successfully tempered') >= 0) {
@@ -221,25 +321,22 @@ lr.on('line', function (line) {
         entry.temper_increase = Number(line.split('+')[1].split(' temperance')[0]);
     }
     
-    // Temper Failure
+    // Tempering Failure
     // 2017.04.03 11:34:55 : Tempering of Kaisinel's Bracelet has failed and the temperance level has decreased to 0.    
     
     if (line.indexOf('Tempering of') >= 0 && line.indexOf('has failed') >= 0) {
         entry.temper_item = line.split('Tempering of ')[1].split(' has failed')[0];
-        entry.temper_increase = false;
     }
     
-    // ======
-    // Quests
-    // ======
+    // ========
+    //  Quests
+    // ========
     
     // Quest Acquired
     // 2017.04.04 19:19:10 : Quest acquired: [Prestige/Daily] Prestigious Valor
     
     if (line.indexOf('Quest acquired') >= 0) {
         entry.quest_acquired = line.split('acquired: ')[1];
-    } else {
-        entry.quest_acquired = false;
     }
     
     // Quest Updated
@@ -247,8 +344,6 @@ lr.on('line', function (line) {
     
     if (line.indexOf('Quest updated') >= 0) {
         entry.quest_updated = line.split('updated: ')[1];
-    } else {
-        entry.quest_updated = false;
     }
     
     // Quest Complete
@@ -258,17 +353,15 @@ lr.on('line', function (line) {
         entry.quest_completed = line.split('complete: ')[1];
     }    
 
-    // ============
-    // Abyss Points
-    // ============
+    // ==============
+    //  Abyss Points
+    // ==============
     
     // AP Earned
     // 2017.03.08 03:06:23 : You have gained 800 Abyss Points.
     
     if (line.indexOf('You have gained') >= 0 && line.indexOf('Abyss Points') >= 0) {
         entry.ap_earned = Number(line.split('gained ')[1].split(' Abyss')[0].replace(/,/gi, ''));
-    } else {
-        entry.ap_earned = false;
     }
 
     // AP Spent
@@ -276,159 +369,296 @@ lr.on('line', function (line) {
     
     if (line.indexOf('You used') >= 0 && line.indexOf('Abyss Points')) {
         entry.ap_spent = Number(line.split('used ')[1].split(' Abyss')[0].replace(/,/gi, ''));
-    } else {
-        entry.ap_spent = false;
     }
 
-    // ============
-    // Glory Points
-    // ============
+    // ==============
+    //  Glory Points
+    // ==============
     
     // GP Earned
     // 2017.03.07 23:06:04 : You have gained 150 Glory Points.
     
     if (line.indexOf('You have gained') >= 0 && line.indexOf('Glory Points') >= 0) {
         entry.gp_earned = Number(line.split('gained ')[1].split(' Glory')[0].replace(/,/gi, ''));
-    } else {
-        entry.gp_earned = false;
     }
 
-    // ================
-    // Damage Inflicted
-    // ================
+    // ==================
+    //  Damage Inflicted
+    // ==================
 
-    // Set attributes to false first and overide if true
-    
-    entry.damage_inflicted = false;
-    entry.damage_skill = false;
-    entry.damage_target = false;
-    entry.damage_target_npc = false;
-    entry.damage_target_player = false;
-    entry.damage_critical = false;
-    
     // Damage Inflicted
-    // 2017.03.31 22:36:37 : Critical Hit! You inflicted 1,136 critical damage on Crowley-SL.
-    // 2017.03.31 22:36:37 : You inflicted 113 damage on Crowley-SL.
+    // 2017.03.31 22:36:37 : You inflicted 113 damage on Crowley-SL.    
     
     if (line.indexOf('You inflicted') >= 0) {
+
+        // assign damage first
         entry.damage_inflicted = Number(line.split('inflicted ')[1].split(' damage')[0].replace(/,/gi, ''));
-        
-        // Damage Inflicted with Skill
-        // 2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.
+
+        // if skill exists
         // 2017.03.31 22:35:06 : You inflicted 1,075 damage on LindWanijima-SL by using Wrathful Explosion.  
        
         if (line.indexOf('by using') >= 0) {
-            entry.damage_skill = line.split('using ')[1].split('.')[0];
-            entry.damage_target = line.split('on ')[1].split(' using')[0];
-        } else {
-            entry.damage_skill = false;       
-            entry.damage_target = line.split('damage on ')[1].split('.')[0]; // some skills end with ' .' a space before period see if this affects anything
-        }
-        
-        // Damage Inflicted on Monster
-        // 2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.
-        // 2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.
- 
-        if (entry.damage_target != false) {
-            if (entry.damage_target.split(' ').length > 1) {
-                entry.damage_target_npc = true;
-                entry.damage_target_player = false;
-            } else if (entry.damage_target.split(' ').length == 1) {
-                if (check_if_monster(entry.damage_target)) {
-                    entry.damage_target_npc = true;
-                    entry.damage_target_player = false;     
-                } else {
-                    entry.damage_target_npc = false;
-                    entry.damage_target_player = true;
-                }
-            }
-        }
 
-        // Critical Damage Inflicted
-        // 2017.03.31 22:36:37 : Critical Hit! You inflicted 1,136 critical damage on Crowley-SL.       
-        // 2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.
-        // 2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.
-        
-        if (line.indexOf(' : Critical Hit!') >= 0) {
-            entry.damage_critical = true;
-        } else {
-            entry.damage_critical = false;
+            // assign skill
+            entry.damage_skill = line.split('using ')[1].split('.')[0].trim();
+            
+            // assign target attribute based on raw string with skill
+            entry.target = line.split('damage on ')[1].split(' by')[0].trim();
+        } 
+
+        // if skill doesn't exist
+        else {
+            // Assign Target as Per Normal 
+            entry.damage_target = line.split('damage on ')[1].split('.')[0].trim();
         }
-        
     }
     
-    // ===============
-    // Damage Received
-    // ===============
+    // Check if Target is a Monster
+    // 2017.03.31 23:49:23 : You inflicted 2,005 damage on Primeval Mookie by using Tumultuos Surge.
 
-    // to do list
+    // check if target exists
+    if (entry.damage_target != false) {
 
-    // Put a checker here. For entries that are all false, do not push into log array
-    log.push(entry);
+        // if it exists, check if it's nam has more than one-word
+        if (entry.damage_target.split(' ').length > 1) {
+
+            // if so, it's a monster
+            entry.damage_target_npc = true;
+        } 
+
+        // if not
+        else if (entry.damage_target.split(' ').length == 1) {
+            
+            // check target's name against mononymous monster list
+            if (check_mononymous(entry.damage_target)) {
+                
+                // if it matches any of the names in that list, then it's a monster
+                entry.damage_target_npc = true;
+            } 
+
+            // if not
+            else {
+
+                // target is a player
+                entry.damage_target_player = true;
+            }
+        }
+    }    
+    
+    // =================
+    //  Damage Received
+    // =================
+
+    // You Received Damage From
+    // 2017.03.02 10:22:42 : You received 1,226 damage from Beritra's Rebels Raider . 
+    
+    if (line.indexOf('You received') >= 0 && line.indexOf('damage from') >= 0) {
+        entry.damage_received = Number(line.split('received ')[1].split(' damage')[0].replace(/,/gi, ''));
+        entry.damage_source = line.split('from ')[1].split('.')[0].trim();
+    }
+    
+    // Has Inflicted Damage on You By Using
+    // 2017.03.31 22:38:00 : LindWanijima-SL has inflicted 573 damage on you by using Canted Shot.         
+    
+    if (line.indexOf('has inflicted') >= 0 && line.indexOf('damage on you by using') >= 0) {
+        
+        // assign damage and skill 
+        entry.damage_received = Number(line.split('inflicted ')[1].split(' damage')[0].replace(/,/gi, '').trim());
+        entry.damage_skill = line.split('by using ')[1].split('.')[0].trim();
+        
+        // if hit is critical, assign source this way
+        if (line.indexOf('Critical Hit') >= 0) {
+           entry.damage_source = line.split('Hit!')[1].split(' has')[0];
+        } 
+
+        // if not critical, assign source this way
+        else {
+           entry.damage_source = line.split(' : ')[1].split(' has')[0];
+        }
+    }
+    
+    // You Receive(d) Damage Due to
+    // 2017.04.05 21:05:59 : You received 2,726 damage due to Magma Burst. 
+    // 2017.02.26 12:05:44 : You receive 1,022 damage due to Fluttered Note Effect. 
+    
+    if (line.indexOf('You receive') >= 0 && line.indexOf('due to') >= 0 && line.indexOf('the effect of') < 0) {
+        
+        // if raw string sates "received"
+        if (line.indexOf('received') >= 0) {
+
+            // assign damage this way
+            entry.damage_received = Number(line.split('received ')[1].split(' damage')[0].replace(/,/gi, '').trim());
+        } 
+
+        // if not, treat it as "receive"
+        else {
+
+            // and assign damage this way
+            entry.damage_received = Number(line.split('receive ')[1].split(' damage')[0].replace(/,/gi, '').trim());            
+        }
+        
+        // assign skill
+        entry.damage_skill = line.split('due to ')[1].split('.')[0].trim();
+    }
+    
+    // You Received Damage Due to The Effect Of
+    // 2017.04.06 21:41:11 : You received 84 bleeding damage due to the effect of Far Wound.
+    // 2017.02.25 05:28:01 : You received 108 poisoning damage due to the effect of Wide Area Poison Slash. 
+
+    if (line.indexOf('You received') >= 0 && line.indexOf('due to the effect of') >= 0) {
+        entry.damage_received = Number(line.split('received ')[1].split(' ')[0].replace(/,/gi, '').trim());
+        entry.damage_skill = line.split('effect of ')[1].split('.')[0].trim();
+    }
+    
+    // check if source exists
+    if (entry.damage_source != false) {
+
+        // if it exists, check if it's nam has more than one-word
+        if (entry.damage_source.split(' ').length > 1) {
+
+            // if so, it's a monster
+            entry.damage_source_npc = true;
+        } 
+
+        // if not
+        else if (entry.damage_source.split(' ').length == 1) {
+
+            // check target's name against mononymous monster list
+            if (check_mononymous(entry.damage_source)) {
+
+                // if it matches any of the names in that list, then it's a monster
+                entry.damage_source_npc = true;
+            } 
+
+            // if not
+            else {
+
+                // source is a player
+                entry.damage_source_player = true;
+            }
+        }
+    }
+
+    // =================
+    //  Critical Damage
+    // =================
+
+    // 2017.02.25 05:28:22 : Critical Hit! You received 1,130 damage from Beritra's Rebels Raider . 
+    // 2017.03.31 22:36:37 : Critical Hit! You inflicted 1,136 critical damage on Crowley-SL.
+    // 2017.03.31 22:35:36 : Critical Hit!You inflicted 1,399 damage on LeonTyrron-SL by using Ferocious Strike.
+    // 2017.04.01 00:16:46 : Critical Hit!You inflicted 4,121 damage on Primeval Mookie by using Tumultuos Surge.
+    // 2017.04.05 21:26:13 : Critical Hit! You inflicted 2,509 critical damage on Prime Tumon I.
+    // 2017.03.31 22:37:59 : Critical Hit!LindWanijima-SL has inflicted 1,138 damage on you by using Crosstrigger.   
+    // 2017.04.03 11:15:02 : Critical Hit!You receive 1,079 damage due to Chain of Earth. 
+    
+    if (line.indexOf('Critical Hit!') >= 0) {
+        entry.damage_critical = true;
+    }
+
+    // ===================
+    //  Filtering Results
+    // ===================
+
+    // checking each object for attributes that are not false
+    for (var i in entry) {
+        if (entry[i] != false) {
+            checker++;
+        }
+    }
+
+    // push those that relevant to the array
+    // note: using "2" becase the first two lines, raw and time, are already filled
+    if (checker > 2) {
+        log.push(entry);
+    }
 });
 
 lr.on('end', function () {
-    // for (var i = 0; i < 30; i++) {
-    //     console.log(log[i]);
-    // }
-    fs.writeFileSync('test.json', JSON.stringify(test));
+    get_item_names();
 });
 
-function check_if_monster(name) {
+function check_mononymous(name) {
     var result = false;
-    for (i in monsters) {
-        if (monsters[i] == name) {
+    for (i in mononymous_monsters) {
+        if (mononymous_monsters[i] == name) {
             result = true;   
         }
     }
     return result;
 }
 
-// Function to get Item Name
-function request_item(item_id) {
-    
-    request('http://api.notaion.com/?item&id=' + item_id, function (error, response, body) {
-        
+function convert_time(raw) {
+    // YYYY-mm-ddTHH:MM:ss
+    var time = raw.split(' : ')[0].split(' ')[0].replace(/\./gi, '-')
+    var date = raw.split(' : ')[0].split(' ')[1];
+    var final = time + 'T' + date;
+    return final;
+}
+
+function get_item_names() {
+    for (var i in log) {
+        if (log[i].item_id != false) {
+            item_api(i, log[i].item_id);
+        }
+    }
+}
+
+// Function to Get Item Name Using NotAion's API
+function item_api(index, item_id) {
+    request(item_api_url + item_id, function(error, response, body) {
         if (!error && response.statusCode == 200) {
             var item = JSON.parse(body).item[0];
-            return item['name'];
-        }
-        
-        else {
+            log[index].item_acquired = item['name'];
+            num_items_processed++;
+            // Once All Items Have Been Given Their Name, Generate JSON file.
+            if (num_items_processed == num_items) {
+                fs.writeFileSync('output/log.json', JSON.stringify(log));
+            }
+        } else {
             console.error('request failed');
         }
-
     });
 }
+
 ```
 Sample Output
 ```js
-{ raw: '2017.03.31 21:49:59 : You changed the connection status to Online.',
-  user_logged_on: true,
-  region_changed_to: false,
-  money_earned: false,
-  money_spent: false,
-  item_sold_on_broker: false,
-  item_sold_to_npc: false,
+{ raw: '2017.04.05 15:10:59 : You have acquired 10,000 [item:188100335;ver8;;;;](s).',
+  time: '2017-04-05T15:10:59',
+  logged_in: false,
+  region: false,
+  hours_played: false,
+  friend_logged_in: false,
+  friend_logged_out: false,
   whisper_from: false,
   whisper_to: false,
-  item_acquired: false,
-  item_quantity: false,
+  money_earned: false,
+  money_spent: false,
+  ap_earned: false,
+  ap_spent: false,
+  gp_earned: false,
+  item_sold_broker: false,
+  item_sold_npc: false,
+  item_acquired: 'Magic Powder',
+  item_id: 188100335,
+  item_quantity: 10000,
   enchant_item: false,
   enchant_increase: false,
   temper_item: false,
   temper_increase: false,
   quest_acquired: false,
   quest_updated: false,
-  ap_earned: false,
-  ap_spent: false,
-  gp_earned: false,
+  quest_completed: false,
   damage_inflicted: false,
+  damage_received: false,
+  damage_critical: false,
   damage_skill: false,
   damage_target: false,
   damage_target_npc: false,
   damage_target_player: false,
-  damage_critical: false }
+  damage_source: false,
+  damage_source_npc: false,
+  damage_source_player: false }
 ```
 
 ## Monsters with one word in their names
