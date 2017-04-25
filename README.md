@@ -12,9 +12,9 @@
 # Visual Mock-Ups
 Compact View
 
-![](/writing/images/concepts-170409b-01.png)
+![](/writing/images/concepts-170424a-01.png)
 
-Expanded View
+Expanded View (Will Update)
 
 ![](/writing/images/concepts-170409b-02.png)
 
