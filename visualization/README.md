@@ -1,3 +1,3 @@
 # Visualization
 
-[Visualization WIP](https://neuralism.github.io/thesis/visualization/)
+[Link to App Repository on Github](https://github.com/neuralism/thesis-app)

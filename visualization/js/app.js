@@ -1,4 +1,5 @@
 $('.section').click(togglePanel);
+$('.section').click(test);
 
 function togglePanel(event) {
     if (event.currentTarget.getAttribute("collasped") == 'true') {
@@ -9,3 +10,12 @@ function togglePanel(event) {
         event.currentTarget.setAttribute("collasped", true);
     }
 }
+
+function test() {
+    console.log('blah');
+    $.get( "http://delete-this-neuralism.c9users.io/", function( data ) {
+      $( ".result" ).html( data );
+      alert( "Load was performed." + data );
+    });
+}
+
