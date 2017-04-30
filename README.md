@@ -1,7 +1,7 @@
 # Thesis
 - [Written Thesis](/writing/thesis.md) / [Reading List](/writing/readingList.md)
 - [Data Structure Development](https://github.com/neuralism/thesis/tree/master/work)
-- [Visualization Development](https://neuralism.github.io/thesis/visualization/)
+- [Visualization Development](https://github.com/neuralism/thesis-app)
 - [Target Audience and Personas](/writing/)
 
 # Feature List
