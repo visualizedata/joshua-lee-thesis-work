@@ -1,8 +1,16 @@
 # Thesis
+
 - [Written Thesis](/writing/thesis.md) / [Reading List](/writing/readingList.md)
 - [Data Structure Development](https://github.com/neuralism/thesis/tree/master/work)
 - [Visualization Development](https://github.com/neuralism/thesis-app)
 - [Target Audience and Personas](/writing/)
+
+# Project Details
+
+- Title: Visualizing Player Interactions in Aion 
+- [Preview Images](https://github.com/neuralism/thesis/tree/master/work/preview)
+- [Hosted Site (waiting for Aaron to upload to AWS)](http://joshua-tests.us-east-1.elasticbeanstalk.com/)
+- [Prototype Site (C9)](https://thesis-app-neuralism.c9users.io/)
 
 # Feature List
 - A platform for Aion players to review their gameplay activity in a visually more engaging way.
