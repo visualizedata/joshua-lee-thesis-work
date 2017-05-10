@@ -11,6 +11,7 @@
 - [Preview Images](https://github.com/neuralism/thesis/tree/master/work/preview)
 - [Hosted Site (waiting for Aaron to upload to AWS)](http://joshua-tests.us-east-1.elasticbeanstalk.com/)
 - [Prototype Site (C9)](https://thesis-app-neuralism.c9users.io/)
+- [App Development Repo](https://github.com/neuralism/thesis-app)
 
 # Feature List
 - A platform for Aion players to review their gameplay activity in a visually more engaging way.
